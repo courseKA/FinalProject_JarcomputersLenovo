@@ -1,8 +1,0 @@
-USE laptop_data;
-
-CREATE TABLE lenovo_laptops (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    product_name VARCHAR(255),
-    price DECIMAL(10, 2),
-    screen_size_cm FLOAT
-);
