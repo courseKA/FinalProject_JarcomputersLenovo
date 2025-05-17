@@ -81,6 +81,8 @@ BeautifulSoup: Library for parsing HTML and XML documents.
 
 Regex (re module) – Used to extract structured data (e.g., screen size like “39.6 cm”) from unstructured text.
 
+Time (time module) – Used to manage delays between requests and avoid overloading the target website.
+
 7.Extensibility
 The project is designed with flexibility in mind. By simply updating the target URL and adjusting HTML parsing logic in scraper.py, you can adapt the application to scrape data from other laptop brands such as ASUS or HP. The rest of the system—including the GUI and database logic—remains unchanged, allowing for easy extension to other sources with similar structures.
 
