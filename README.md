@@ -1,31 +1,33 @@
 FinalProject_JarcomputersLenovo
-This project is a Python-based application designed to scrape and display laptop specifications from the Lenovo website. It features a graphical user interface (GUI) built with PyQt5 
+This project is a Python-based application designed to scrape and display laptop specifications from the Jarcomputers website. It features a graphical user interface (GUI) built with PyQt5 
 and utilizes MySQL for data storage.
 
 Table of Contents
 
-Project Overview
+A. Project Overview
 
-Features
+1. Features
 
-Installation
+2. Installation
 
-Usage
+3. Usage
 
-Project Structure
+4. Project Structure
 
-Technologies Used
+5. Technologies Used
 
-License
+6. Extensibility
 
-Project Overview
+7. License
 
-The application allows users to browse and filter Lenovo laptop specifications. It scrapes data from Lenovo's official website and stores it in a MySQL database.
+A. Project Overview
+
+The application allows users to browse and filter Lenovo laptop specifications. It scrapes data from Jarcomputers official website and stores it in a MySQL database.
 The GUI provides an intuitive interface for users to interact with the data.
 
-Features
+1. Features
 
-Web Scraping: Extracts laptop specifications from Lenovo's official website.
+Web Scraping: Extracts laptop specifications from Jarcomputers official website.
 
 GUI Interface: Built with PyQt5 for a user-friendly experience.
 
@@ -33,7 +35,7 @@ MySQL Database: Stores laptop data for efficient querying and management.
 
 Data Filtering: Allows users to filter laptops based on various specifications.
 
-Installation
+2. Installation
 
 To set up the project locally, follow these steps:
 
@@ -60,13 +62,13 @@ Install required Python packages:
 
 pip install PyQt5 mysql-connector-python beautifulsoup4 requests
 
-Usage
+3. Usage
 
 To run the application:
 python main.py
 This will launch the GUI, allowing you to interact with the application.
 
-Project Structure
+4. Project Structure
 
 FinalProject_JarcomputersLenovo/
 ├── main.py            # Entry point of the application
@@ -76,7 +78,7 @@ FinalProject_JarcomputersLenovo/
 ├── laptop_data.sql    # MySQL database schema
 └── requirements.txt   # List of required Python packages
 
-Technologies Used
+5. Technologies Used
 
 Python: Programming language used for the application.
 
@@ -88,5 +90,9 @@ Requests: HTTP library for making requests to web pages.
 
 BeautifulSoup: Library for parsing HTML and XML documents.
 
-License
+6. Extensibility
+
+The project is designed with flexibility in mind. By simply updating the target URL and adjusting HTML parsing logic in scraper.py, you can adapt the application to scrape data from other laptop brands such as ASUS or HP. The rest of the system—including the GUI and database logic—remains unchanged, allowing for easy extension to other sources with similar structures.
+
+7. License
 This project is licensed under the MIT License - see the LICENSE file for details.
