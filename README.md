@@ -125,3 +125,20 @@ This block ensures that the code only runs **when the script is executed directl
    scraper = LaptopScraper(url)
    data = scraper.scrape_data()
    scraper.save_to_db(data)
+
+## G. Technologies Used
+
+| Module                 | Description                                 |
+|------------------------|---------------------------------------------|
+| `requests`             | For HTTP requests                           |
+| `beautifulsoup4`       | For parsing HTML                            |
+| `re` (standard)        | Regular expressions for screen size parsing |
+| `mysql-connector-python` | MySQL database connection and queries    |
+| `time` (standard)      | Sleep between requests                      |
+| `config` (custom)      | Stores `db_config` connection dictionary    |
+
+---
+
+## H. Requirements
+
+The requirements are in requiremnts.txt file.
