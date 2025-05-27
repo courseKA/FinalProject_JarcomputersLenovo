@@ -140,5 +140,11 @@ This block ensures that the code only runs **when the script is executed directl
 ---
 
 ## H. Requirements
+(Recommended) Create and activate a virtual environment:
+
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+Install dependencies:
+pip install -r requirements.txt
 
 The requirements are in requiremnts.txt file.
