@@ -173,14 +173,26 @@ pip install -r requirements.txt
 
 ---
 
+## J. Screenshots
 
-## **J. Run the project**
+### 1. Full GUI view
+![Full GUI](screenshots/gui_full.png)
+
+### 2. Filtering by Price or Screen Size
+![Filtering](screenshots/gui_filter.png)
+
+### 3. Sorted by price
+![Sorted Data](screenshots/gui_sorted.png)
+
+---
+
+## **K. Run the project**
 
 python main.py
     
 ---
 
-## **K. Requirements**
+## **L. Requirements**
 
 source venv/bin/activate  # On Windows use: venv\Scripts\activate
 Install dependencies:
