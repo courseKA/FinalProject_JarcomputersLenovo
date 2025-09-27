@@ -4,6 +4,7 @@ Lenovo Laptop Scraper Project
 
 The goal of this project is to extract information about Lenovo laptops — specifically the model, price, and screen size — from the website [https://www.jarcomputers.com](https://www.jarcomputers.com).  
 
+## B. Project Structure
 To achieve this, the project is organized into the following files:
 
 - `scraper.py` – Web scraper for extracting the required data  
@@ -11,10 +12,11 @@ To achieve this, the project is organized into the following files:
 - `gui.py` – Graphical user interface (GUI) using PyQt5  
 - `laptop_data.sql` – SQL file for creating the database table  
 - `main.py` – Main file that runs the entire application
+- 'requirements.txt` – Dependencies list  
 
 ---
 
-## B. Web Scraper (`scraper.py`)
+## C. Web Scraper (`scraper.py`)
 
 ### 1. `LaptopScraper` class
 
@@ -58,7 +60,7 @@ Stores the extracted data in a MySQL database by:
 
 ---
 
-## C. Configuration (`config.py`)
+## D. Configuration (`config.py`)
 
 This file contains a dictionary with the credentials needed to connect to the MySQL database:
 
@@ -73,7 +75,7 @@ Keeping this in a separate file provides:
 
 ---
 
-## D. Graphical Interface (`gui.py`)
+## E. Graphical Interface (`gui.py`)
 
 This file uses:
 
@@ -90,14 +92,14 @@ Filtering functionality is implemented using **text input fields (`QLineEdit`)**
 
 ---
 
-## E. SQL File (`laptop_data.sql`)
+## F. SQL File (`laptop_data.sql`)
 
 This file contains the SQL script for creating the database table used to store the scraped data.  
 The table includes columns for model, price, and screen size.
 
 ---
 
-## F. Main Script (`main.py`)
+## G. Main Script (`main.py`)
 
 This is the entry point of the application. It defines the main logic and shows the final result — a table displaying all Lenovo laptops with three columns: **model**, **price**, and **screen size**, along with filters in the table header.
 
@@ -126,7 +128,9 @@ This block ensures that the code only runs **when the script is executed directl
    data = scraper.scrape_data()
    scraper.save_to_db(data)
 
-## G. Technologies Used
+---
+
+## H. Technologies Used
 
 | Module                 | Description                                 |
 |------------------------|---------------------------------------------|
@@ -139,10 +143,45 @@ This block ensures that the code only runs **when the script is executed directl
 
 ---
 
-## H. Requirements
-(Recommended) Create and activate a virtual environment:
+## I. How to Run
+
+### 1. Clone the repository
+
+git clone https://github.com/courseKA/FinalProject_JarcomputersLenovo.git
+cd FinalProject_JarcomputersLenovo
+
+### 2. Create and activate virtual environment
 
 python -m venv venv
+# On Linux/Mac
+source venv/bin/activate
+# On Windows
+venv\Scripts\activate
+
+### 3. Install dependencies
+
+pip install -r requirements.txt
+
+---
+
+## I. Database (`config.py` + `laptop_data.sql`)
+- Stores results in a **MySQL database**
+- Automatically:
+  - Creates table if not exists
+  - Deletes old records
+  - Inserts new laptop data
+
+---
+
+
+## **J. Run the project**
+
+python main.py
+    
+---
+
+## **K. Requirements**
+
 source venv/bin/activate  # On Windows use: venv\Scripts\activate
 Install dependencies:
 pip install -r requirements.txt
